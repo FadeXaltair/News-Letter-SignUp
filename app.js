@@ -29,10 +29,10 @@ app.post("/", function(req , res){
 
    var jsonData = JSON.stringify(data);
 
-   const url = "https://us14.api.mailchimp.com/3.0/lists/dbe0037812";
+   const url = "https://us14.api.mailchimp.com/3.0/lists/ListId";
    const options = {
         method : "POST",
-        auth : "hitesh:85aec9342825b468013f2378b86c9259-us14"
+        auth : "name: pass"
    }
 
    const request = https.request(url , options , function(response){
@@ -64,8 +64,3 @@ app.listen(3000 , function(){
 });
 
 
-// api Key 
-// 85aec9342825b468013f2378b86c9259-us14
-
-// list id 
-// dbe0037812
